@@ -3,6 +3,6 @@ VidRecEngine is a personalized video recommendation system designed to enhance u
 
 Features:
 
-Personalized video recommendations based on user behaviour and preferences.
-Integration of content analysis from video transcriptions to improve suggestion accuracy.
-Evaluation of recommendation models using industry-standard metrics.
+* Personalized video recommendations based on user behaviour and preferences.
+* Integration of content analysis from video transcriptions to improve suggestion accuracy.
+* Evaluation of recommendation models using industry-standard metrics.
