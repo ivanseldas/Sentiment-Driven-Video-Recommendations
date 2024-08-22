@@ -54,19 +54,19 @@ This project is a personalized YouTube video recommendation system that leverage
 ## Installation
 
 ### 1. Clone the repository:
-\`\`\`bash
+```bash
 git clone https://github.com/yourusername/your-repo-name.git
-\`\`\`
+```
 
 ### 2. Navigate to the project directory:
-\`\`\`bash
+```bash
 cd your-repo-name
-\`\`\`
+```
 
 ### 3. Install required dependencies:
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ## Usage
 
