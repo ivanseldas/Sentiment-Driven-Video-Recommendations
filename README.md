@@ -16,8 +16,18 @@ Personalized video recommendation system based on video content, user interactio
 ## Datasets
 
 - **`df_videos`**: Video data including view count, like count, comment count, and more.
+  
 - **`df_comments`**: Comment data with sentiment analysis and engagement metrics.
+|    | comment_id                 | text                                                                                               |   like_count |
+|---:|:---------------------------|:---------------------------------------------------------------------------------------------------|-------------:|
+|  0 | UgxqJ2eO2p7w2NEvB2p4AaABAg | great video,helpful.                                                                               |            1 |
+|  1 | UgzmXwaNzivNHqjfR5l4AaABAg | Thank you for such well explained video tutorial                                                   |            4 |
+|  2 | UgyySzt4xOZ1hKdS97x4AaABAg | very useful tools , thanks for sharing this info with us.                                          |            2 |
+|  3 | UgyHVo-IOZw_-uLb-wh4AaABAg | This is great information and a terrific use of AI. Thanks for creating this video and posting it. |           13 |
+|  4 | UgyIT65ucXCc-4loBEx4AaABAg | first two are not goof but all other AI id the best thanks for sharing this video                  |            1 |
+
 - **`df_channels`**: Channel-level data including subscriber count and total video views.
+  
 - **`df_categories`**: Categorical data related to video genres and types.
 
 ## Key Features
