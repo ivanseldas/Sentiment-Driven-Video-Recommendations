@@ -1,6 +1,8 @@
 
 # Sentiment-Driven Video Recommendations
 
+![image](https://github.com/user-attachments/assets/192f69f2-0b6e-4b30-9c36-b12caae3edbd)
+
 ## Project Overview
 
 This project is a personalized YouTube video recommendation system that leverages video content, user interactions, and sentiment analysis from comments to recommend relevant videos to users.
