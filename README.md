@@ -5,7 +5,7 @@
 
 ## Project Overview
 
-This project is a personalized YouTube video recommendation system that leverages video content, user interactions, and sentiment analysis from comments to recommend relevant videos to users.
+Personalized video recommendation system based on video content, user interactions, and sentiment analysis from comments to recommend relevant videos to users.
 
 ## Objectives
 
