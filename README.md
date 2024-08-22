@@ -19,13 +19,13 @@ Personalized video recommendation system based on video content, user interactio
   
 - **`df_comments`**: Comment data with sentiment analysis and engagement metrics.
 
-|    | comment_id                 | text                                                                                               |   like_count |
-|---:|:---------------------------|:---------------------------------------------------------------------------------------------------|-------------:|
-|  0 | UgxqJ2eO2p7w2NEvB2p4AaABAg | great video,helpful.                                                                               |            1 |
-|  1 | UgzmXwaNzivNHqjfR5l4AaABAg | Thank you for such well explained video tutorial                                                   |            4 |
-|  2 | UgyySzt4xOZ1hKdS97x4AaABAg | very useful tools , thanks for sharing this info with us.                                          |            2 |
-|  3 | UgyHVo-IOZw_-uLb-wh4AaABAg | This is great information and a terrific use of AI. Thanks for creating this video and posting it. |           13 |
-|  4 | UgyIT65ucXCc-4loBEx4AaABAg | first two are not goof but all other AI id the best thanks for sharing this video                  |            1 |
+|    | comment_id                 | text                                                                                               |   like_count | published_at              |
+|---:|:---------------------------|:---------------------------------------------------------------------------------------------------|-------------:|:--------------------------|
+|  0 | UgxqJ2eO2p7w2NEvB2p4AaABAg | great video,helpful.                                                                               |            1 | 2024-08-17 13:07:48+00:00 |
+|  1 | UgzmXwaNzivNHqjfR5l4AaABAg | Thank you for such well explained video tutorial                                                   |            4 | 2023-05-01 14:48:21+00:00 |
+|  2 | UgyySzt4xOZ1hKdS97x4AaABAg | very useful tools , thanks for sharing this info with us.                                          |            2 | 2023-07-20 11:33:23+00:00 |
+|  3 | UgyHVo-IOZw_-uLb-wh4AaABAg | This is great information and a terrific use of AI. Thanks for creating this video and posting it. |           13 | 2023-06-25 00:36:50+00:00 |
+|  4 | UgyIT65ucXCc-4loBEx4AaABAg | first two are not goof but all other AI id the best thanks for sharing this video                  |            1 | 2023-05-31 16:41:21+00:00 |
 
 - **`df_channels`**: Channel-level data including subscriber count and total video views.
   
