@@ -91,7 +91,7 @@ pip install -r requirements.txt
 
 ## Contributors
 
-- **Your Name**
+- **Ivan Seldas Perulero**
 
 ## License
 
