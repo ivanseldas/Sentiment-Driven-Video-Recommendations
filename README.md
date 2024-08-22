@@ -52,12 +52,12 @@ This project is a personalized YouTube video recommendation system that leverage
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/ivanseldas/YouTube-Video-Recommendation-System.git
+git clone https://github.com/ivanseldas/Sentiment-Driven-Video-Recommendations.git
 ```
 
 ### 2. Navigate to the project directory:
 ```bash
-cd YouTube-Video-Recommendation-System
+cd Sentiment-Driven-Video-Recommendations
 ```
 
 ### 3. Install required dependencies:
