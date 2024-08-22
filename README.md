@@ -32,9 +32,6 @@ This project is a personalized YouTube video recommendation system that leverage
 - Applied DBSCAN for clustering videos based on their features.
 - Prioritized videos from the same cluster in the recommendation process.
 
-### 4. Language Filtering:
-- Filtered recommended videos to match the language of the target video.
-
 ## How It Works
 
 ### 1. Data Preparation:
@@ -55,12 +52,12 @@ This project is a personalized YouTube video recommendation system that leverage
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/ivanseldas/YouTube-Video-Recommendation-System.git
 ```
 
 ### 2. Navigate to the project directory:
 ```bash
-cd your-repo-name
+cd YouTube-Video-Recommendation-System
 ```
 
 ### 3. Install required dependencies:
