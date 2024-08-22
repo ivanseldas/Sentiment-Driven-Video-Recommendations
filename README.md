@@ -17,14 +17,6 @@ Personalized video recommendation system based on video content, user interactio
 
 - **`df_videos`**: Video data including view count, like count, comment count, and more.
 - **`df_comments`**: Comment data with sentiment analysis and engagement metrics.
-- |    | comment_id                 | author             | author_channel_id        | text                                                                                               |   like_count | published_at              | updated_at                |   totalReplyCount | video_id    | clean_text                                                      |
-|---:|:---------------------------|:-------------------|:-------------------------|:---------------------------------------------------------------------------------------------------|-------------:|:--------------------------|:--------------------------|------------------:|:------------|:----------------------------------------------------------------|
-|  0 | UgxqJ2eO2p7w2NEvB2p4AaABAg | @emmanuelamama1991 | UCdUooL3DTt3Wj0M3xRnAC3Q | great video,helpful.                                                                               |            1 | 2024-08-17 13:07:48+00:00 | 2024-08-17 13:07:48+00:00 |                 1 | qtlUwwtvuEg | great videohelpful                                              |
-|  1 | UgzmXwaNzivNHqjfR5l4AaABAg | @dr.alexshayo6972  | UCN56M0YoTn18rd_KBFL0QGg | Thank you for such well explained video tutorial                                                   |            4 | 2023-05-01 14:48:21+00:00 | 2023-05-01 14:48:21+00:00 |                 1 | qtlUwwtvuEg | thank well explained video tutorial                             |
-|  2 | UgyySzt4xOZ1hKdS97x4AaABAg | @mohdkashif4596    | UCr5Ua5AsmM6phaRu3dBU1qg | very useful tools , thanks for sharing this info with us.                                          |            2 | 2023-07-20 11:33:23+00:00 | 2023-07-20 11:33:23+00:00 |                 1 | qtlUwwtvuEg | useful tool thanks sharing info u                               |
-|  3 | UgyHVo-IOZw_-uLb-wh4AaABAg | @pipedrmmr         | UC5KmDvJCDtoM31gjpGcdYLQ | This is great information and a terrific use of AI. Thanks for creating this video and posting it. |           13 | 2023-06-25 00:36:50+00:00 | 2023-06-25 00:36:50+00:00 |                 1 | qtlUwwtvuEg | great information terrific use ai thanks creating video posting |
-|  4 | UgyIT65ucXCc-4loBEx4AaABAg | @anamnaz2527       | UCriCWejgmnsDkaX77-Ay8Hw | first two are not goof but all other AI id the best thanks for sharing this video                  |            1 | 2023-05-31 16:41:21+00:00 | 2023-05-31 16:41:21+00:00 |                 1 | qtlUwwtvuEg | first two goof ai id best thanks sharing video                  |
-
 - **`df_channels`**: Channel-level data including subscriber count and total video views.
 - **`df_categories`**: Categorical data related to video genres and types.
 
