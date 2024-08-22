@@ -18,6 +18,7 @@ Personalized video recommendation system based on video content, user interactio
 - **`df_videos`**: Video data including view count, like count, comment count, and more.
   
 - **`df_comments`**: Comment data with sentiment analysis and engagement metrics.
+
 |    | comment_id                 | text                                                                                               |   like_count |
 |---:|:---------------------------|:---------------------------------------------------------------------------------------------------|-------------:|
 |  0 | UgxqJ2eO2p7w2NEvB2p4AaABAg | great video,helpful.                                                                               |            1 |
