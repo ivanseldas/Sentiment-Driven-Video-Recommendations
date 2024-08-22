@@ -1,7 +1,7 @@
 
 # Sentiment-Driven Video Recommendations
 
-![image](https://github.com/user-attachments/assets/3651bfa5-d8c4-49a1-8f51-46cac990ef4d)
+![image](https://github.com/user-attachments/assets/a8b302c5-e168-4a00-a6b6-a1fbcae83a7f)
 
 ## Project Overview
 
