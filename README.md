@@ -1,5 +1,5 @@
 
-# YouTube Video Recommendation System
+# Sentiment-Driven Video Recommendations
 
 ## Project Overview
 
