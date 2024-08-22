@@ -6,5 +6,5 @@ Features:
 * Personalized video recommendations based on user behaviour and preferences.
 * Integration of content analysis from video transcriptions to improve suggestion accuracy.
 * Evaluation of recommendation models using industry-standard metrics.
-* 
-![image](https://github.com/user-attachments/assets/8f2e1f98-2b53-4313-99df-34617305522e)
+
+https://github.com/ivanseldas/VidRecEngine/edit/main/README.md
