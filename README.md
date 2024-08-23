@@ -32,6 +32,9 @@ The following datasets were gathered:
   
 - **`df_categories`**: Categorical data related to video genres and types.
 
+![image](https://github.com/user-attachments/assets/758a916a-fc28-4e51-9cee-0a6fdb4e28f9)
+
+
 ## Key Features
 
 ### 1. Content-Based Filtering:
