@@ -44,3 +44,42 @@ def fetch_video_metadata(video_id, api_key):
     else:
         return None
 ```
+
+## `df_transcript`:
+
+## Main Columns
+
+- **video_id:** Unique identifier for the video on YouTube.
+- **transcription:** The textual transcription of the spoken content in the video.
+- **language:** The language in which the transcription is written.
+- **translation:** The translated version of the transcription, if available.
+
+## Data Examples
+
+- **video_id:** `3qGbPDRzYRI`
+
+  - **transcription:** "hi i'm nick romano ceo of deeplight thanks for..."
+  - **language:** `english`
+  - **translation:** `NaN` (No translation available)
+
+- **video_id:** `K2tXKfKhryo`
+
+  - **transcription:** "यह बिल्कुल वाकई बीटेक कंप्यूटर साइंस फिक्शन क..."
+  - **language:** `hindi`
+  - **translation:** "This is absolutely really B.Tech computer science fiction..."
+
+- **video_id:** `3Rb2hRf5YCQ`
+
+  - **transcription:** "[Música] y sí a ella [Aplausos] aquí no el lib..."
+  - **language:** `spanish`
+  - **translation:** "[Music] and yes to her [Applause] here not the..."
+
+
+| video_id   | transcription                                                           | language | translation                                                    |
+|------------|-------------------------------------------------------------------------|----------|----------------------------------------------------------------|
+| 3qGbPDRzYRI| hi i'm nick romano ceo of deeplight thanks for...                        | english  | NaN                                                            |
+| Amfrm2V_KO0| [Music] how much learning material can you ret...                        | english  | NaN                                                            |
+| K2tXKfKhryo| यह बिल्कुल वाकई बीटेक कंप्यूटर साइंस फिक्शन क...                         | hindi    | This is absolutely really B.Tech computer science fiction...    |
+| 3Rb2hRf5YCQ| [Música] y sí a ella [Aplausos] aquí no el lib...                        | spanish  | [Music] and yes to her [Applause] here not the...               |
+| Rp7qqjlBeRY| morning or good afternoon or good evening depending on your time zone... | english  | NaN                                                            |
+
