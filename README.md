@@ -90,7 +90,7 @@ The following datasets were gathered:
   
 - **`df_categories`**: Categorical data related to video genres and types.
 
-![EDR](https://github.com/user-attachments/assets/755c54b6-ffa3-4b53-9a56-1e3e452a0da2)
+![EDR](https://github.com/user-attachments/assets/072ef07f-c14f-4c7e-95df-4c159d9da5ab)
 
 
 ## Installation
