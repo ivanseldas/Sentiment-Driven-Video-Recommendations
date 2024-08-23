@@ -54,6 +54,8 @@ $$
 
 - Applied cosine similarity to identify similar videos.
 
+![image](https://github.com/user-attachments/assets/1113a2cf-990a-4f4d-8d56-71ae10d8bd1e)
+
 ### 2. Sentiment-Weighted Recommendations:
 - Incorporated sentiment analysis to refine similarity scores.
 - Integrated video statistics (view count, like count, comment count) into the final recommendation score.
