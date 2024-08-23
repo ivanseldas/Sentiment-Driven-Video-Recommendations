@@ -1,8 +1,12 @@
 # Sentiment-Driven Video Recommendations
-
-## Project Overview
-
 Personalized video recommendation system based on video content, user interactions, and sentiment analysis from comments to recommend relevant videos to users.
+
+-----------------------------------------------------------------------------------------------------------------
+
+                            
+                                          RECOMMENDATIONS
+
+-----------------------------------------------------------------------------------------------------------------
 
 ## Objectives
 
