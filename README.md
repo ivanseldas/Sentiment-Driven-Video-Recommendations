@@ -14,6 +14,15 @@ Personalized video recommendation system based on video content, user interactio
 - **Utilize Clustering**: Enhance recommendations by clustering similar videos and applying these clusters in the recommendation process.
 
 ## Datasets from Youtube API
+Decided to do a research through the API with 5 queries about 'Artificial Intelligence':
+- "What is artificial intelligence?",
+- "Artificial intelligence applications in healthcare",
+- "AI in autonomous vehicles",
+- "Machine learning vs deep learning",
+- "Artificial intelligence in finance",
+- "How does AI work?",
+- "Top AI tools for data science",
+- "Artificial intelligence in robotics",
 
 - **`df_videos`**: Video data including view count, like count, comment count, and more.
   
