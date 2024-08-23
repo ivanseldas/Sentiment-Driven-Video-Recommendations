@@ -50,7 +50,7 @@ $$
 \text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t)
 $$
 
-- 🧠 Applied **cosine similarity** to identify similar videos.
+- 🧠 Applied **Cosine Similarity** to identify similar videos.
 
 ![Cosine Similarity Visualization](https://github.com/user-attachments/assets/e3e29e7b-5629-454a-831a-19cd82bb12c4)
 
@@ -65,7 +65,7 @@ $$
 ---
 
 ## 3️⃣ **Clustering**:
-- 🔍 Applied **DBSCAN** for clustering videos based on their features.
+- 🔍 **DBSCAN** and **K-means** for clustering videos based on their features.
 - 🎯 Prioritized videos from the same cluster in the recommendation process.
 
 ![Clustering Visualization](https://github.com/user-attachments/assets/b202fc96-22af-4fdf-a2da-cbaecbd0be52)
