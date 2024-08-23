@@ -7,9 +7,15 @@ Personalized video recommendation system based on video content, user interactio
 - `video_id`: The unique identifier of the video for which recommendations are being generated.
 - `title`: The title of the video for which recommendations are being generated.
 
-**Output:**
+**Output: Top 5 Recommendations**
 
-|    | video_id    | title                                                                                               |   final_score |\n|---:|:------------|:----------------------------------------------------------------------------------------------------|--------------:|\n|  0 | -bu9x-UT0yk | Jasmy Technologies is Shaping Japan’s Future with AI, Robotics, and IoT                             |      0.501651 |\n|  2 | FKN5DSKzCPc | KoiBot 2nd Gen AI Commercial Robot:  Introducing remote healthcare applications with JAG Technology |      0.42254  |\n|  5 | 9LFbMz7DrDA | Artificial Intelligence -powered Phone Banking Solution for Financial Institutions                  |      0.408975 |\n|  7 | YT-lPqYbv9k | Case Studies of Artificial Intelligence, Ethics, Social Equity and Bias                             |      0.400314 |\n|  9 | eDbaDbvCsg8 | Medical AI: Exploring  the Realm  Prof   John Doyle                                                 |      0.390431 |
+|    | video_id    | title                                                                                               |   final_score |
+|---:|:------------|:----------------------------------------------------------------------------------------------------|--------------:|
+|  0 | -bu9x-UT0yk | Jasmy Technologies is Shaping Japan’s Future with AI, Robotics, and IoT                             |      0.501651 |
+|  2 | FKN5DSKzCPc | KoiBot 2nd Gen AI Commercial Robot:  Introducing remote healthcare applications with JAG Technology |      0.42254  |
+|  5 | 9LFbMz7DrDA | Artificial Intelligence -powered Phone Banking Solution for Financial Institutions                  |      0.408975 |
+|  7 | YT-lPqYbv9k | Case Studies of Artificial Intelligence, Ethics, Social Equity and Bias                             |      0.400314 |
+|  9 | eDbaDbvCsg8 | Medical AI: Exploring  the Realm  Prof   John Doyle                                                 |      0.390431 |
 
 **Workflow:**
 1. **Input:** The system takes a `video_id` and its corresponding `title` as input.
