@@ -33,6 +33,7 @@ This dataset contains detailed information about various YouTube videos, specifi
 - **language:** "en" (English)
 
 
+
 ## `df_transcript`: 
 Contains the video transcriptions, as well as their languages and translations if not in English:
 
@@ -52,6 +53,8 @@ Contains the video transcriptions, as well as their languages and translations i
 | K2tXKfKhryo| यह बिल्कुल वाकई बीटेक कंप्यूटर साइंस फिक्शन क...                         | hindi    | This is absolutely really B.Tech computer science fiction...    |
 | 3Rb2hRf5YCQ| [Música] y sí a ella [Aplausos] aquí no el lib...                        | spanish  | [Music] and yes to her [Applause] here not the...               |
 | Rp7qqjlBeRY| morning or good afternoon or good evening depending on your time zone... | english  | NaN                                                            |
+
+
 
 ## `df_channel`:
 
