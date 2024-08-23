@@ -1,29 +1,35 @@
-# Sentiment-Driven Video Recommendations
-Personalized video recommendation system based on video content, user interactions, and sentiment analysis from comments to recommend relevant videos to users.
+# 🎯 **Sentiment-Driven Video Recommendations** 🎯
 
------------------------------------------------------------------------------------------------------------------
-                            
-**Input:**
+Personalized video recommendation system based on **video content**, **user interactions**, and **sentiment analysis** from comments to recommend relevant videos to users.
 
-| video_id    | title                                 |
+---
+
+## **🎥 Input:**
+
+| <span style="color:#ff6347">**video_id**</span> | <span style="color:#ff6347">**title**</span> |
 |:------------|:--------------------------------------|
-| Z5s4cWbZX6E | The Ethics of Artificial Intelligence |
+| **Z5s4cWbZX6E** | **The Ethics of Artificial Intelligence** |
 
-**Top 5 Recommendations**
+---
 
-| video_id    | title                                                                          |   final_score |
+## **🔝 Top 5 Recommendations**
+
+| <span style="color:#4682b4">**video_id**</span> | <span style="color:#4682b4">**title**</span> | <span style="color:#4682b4">**final_score**</span> |
 |:------------|:-------------------------------------------------------------------------------|--------------:|
-| Aof4BxK0UlY | Artificial Intelligence Advances, and the Ethical Choices Ahead                |       1.36436 |
-| kX4oTF-2_kM | #12np:  Artificial Intelligence is Hard to See: Social & ethical impacts of AI |       1.30757 |
-| 7Azhgh0nhBY | Artificial Intelligence: How It Will Impact the Financial Industry             |       1.2211  |
-| AT8JCkJH9pY | The Future of Artificial Intelligence - Shaping our AI Futures                 |       1.1094  |
-| yIRL4xtmXE4 | How Will Artificial Intelligence Change Ethics? - Pedro Domingos               |       1.10072 |
+| **Aof4BxK0UlY** | Artificial Intelligence Advances, and the Ethical Choices Ahead                |       **1.36436** |
+| **kX4oTF-2_kM** | #12np:  Artificial Intelligence is Hard to See: Social & ethical impacts of AI |       **1.30757** |
+| **7Azhgh0nhBY** | Artificial Intelligence: How It Will Impact the Financial Industry             |       **1.2211**  |
+| **AT8JCkJH9pY** | The Future of Artificial Intelligence - Shaping our AI Futures                 |       **1.1094**  |
+| **yIRL4xtmXE4** | How Will Artificial Intelligence Change Ethics? - Pedro Domingos               |       **1.10072** |
 
-## Recommendations based on:
+---
 
-- **Video Content**: creating a similarity cousine matrix from the video transcripts.
-- **Comments Sentiment Analysis**: extracting the sentiments of each video for more personalized recommendations.
-- **Clustering**: clustering similar videos based on their figures  and applying these clusters in the recommendation process.
+## **🔍 Recommendations based on:**
+
+- **📹 Video Content**: Creating a similarity matrix from the video transcripts.
+- **💬 Comments Sentiment Analysis**: Extracting the sentiments of each video for more personalized recommendations.
+- **🔗 Clustering**: Clustering similar videos based on their figures and applying these clusters in the recommendation process.
+
 
 -----------------------------------------------------------------------------------------------------------------
 
