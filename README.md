@@ -33,65 +33,70 @@ Personalized video recommendation system based on **video content**, **user inte
 
 -----------------------------------------------------------------------------------------------------------------
 
-## Key Features
+# 🌟 **Key Features** 🌟
 
-### 1. Content-Based Filtering:
-- Built a TF-IDF matrix from video transcriptions.
+## 1️⃣ **Content-Based Filtering**:
+- 📚 Built a **TF-IDF matrix** from video transcriptions.
 
-$$
+\[
 \text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in document } d}{\text{Total number of terms in document } d}
-$$
+\]
 
-$$
+\[
 \text{IDF}(t) = \log\left(\frac{N}{|\{d \in D : t \in d\}|}\right)
-$$
+\]
 
-$$
+\[
 \text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t)
-$$
+\]
 
-- Applied cosine similarity to identify similar videos.
+- 🧠 Applied **cosine similarity** to identify similar videos.
 
-![image](https://github.com/user-attachments/assets/e3e29e7b-5629-454a-831a-19cd82bb12c4)
+![Cosine Similarity Visualization](https://github.com/user-attachments/assets/e3e29e7b-5629-454a-831a-19cd82bb12c4)
 
+---
 
-### 2. Sentiment-Weighted Recommendations:
-- Incorporated sentiment analysis to refine similarity scores.
-- Integrated video statistics (view count, like count, comment count) into the final recommendation score.
+## 2️⃣ **Sentiment-Weighted Recommendations**:
+- 💬 Incorporated **sentiment analysis** to refine similarity scores.
+- 📊 Integrated video statistics (**view count**, **like count**, **comment count**) into the final recommendation score.
 
-![image](https://github.com/user-attachments/assets/eb5ca8a8-dc43-4d39-9340-dfd4f85da648)
+![Sentiment Analysis Visualization](https://github.com/user-attachments/assets/eb5ca8a8-dc43-4d39-9340-dfd4f85da648)
 
+---
 
-### 3. Clustering:
-- Applied DBSCAN for clustering videos based on their features.
-- Prioritized videos from the same cluster in the recommendation process.
+## 3️⃣ **Clustering**:
+- 🔍 Applied **DBSCAN** for clustering videos based on their features.
+- 🎯 Prioritized videos from the same cluster in the recommendation process.
 
-![image](https://github.com/user-attachments/assets/b202fc96-22af-4fdf-a2da-cbaecbd0be52)
+![Clustering Visualization](https://github.com/user-attachments/assets/b202fc96-22af-4fdf-a2da-cbaecbd0be52)
 
-### Data
-## Datasets from YouTube API
-Decided to do research through the API with 5 queries about 'Artificial Intelligence':
+---
 
-- "What is artificial intelligence?"
-- "Artificial intelligence applications in healthcare"
-- "AI in autonomous vehicles"
-- "Machine learning vs deep learning"
-- "Artificial intelligence in finance"
-- "How does AI work?"
-- "Top AI tools for data science"
-- "Artificial intelligence in robotics"
+# 📊 **Data**
 
-The following datasets were gathered:
+## **Datasets from YouTube API**
+Conducted research through the **YouTube API** with 5 queries about 'Artificial Intelligence':
 
-- **`df_videos`**: Video data including view count, like count, comment count, and more.
+- 🤖 "What is artificial intelligence?"
+- 🏥 "Artificial intelligence applications in healthcare"
+- 🚗 "AI in autonomous vehicles"
+- 🧠 "Machine learning vs deep learning"
+- 💰 "Artificial intelligence in finance"
+- ⚙️ "How does AI work?"
+- 🛠️ "Top AI tools for data science"
+- 🤖 "Artificial intelligence in robotics"
+
+### **Gathered Datasets:**
+
+- **`df_videos`**: 🎥 Video data including **view count**, **like count**, **comment count**, and more.
   
-- **`df_comments`**: Comment data with sentiment analysis and engagement metrics.
+- **`df_comments`**: 💬 Comment data with **sentiment analysis** and engagement metrics.
 
-- **`df_channels`**: Channel-level data including subscriber count and total video views.
+- **`df_channels`**: 📺 Channel-level data including **subscriber count** and total video views.
   
-- **`df_categories`**: Categorical data related to video genres and types.
+- **`df_categories`**: 📂 Categorical data related to video genres and types.
 
-![EDR](https://github.com/user-attachments/assets/072ef07f-c14f-4c7e-95df-4c159d9da5ab)
+![Entity-Relationship Diagram](https://github.com/user-attachments/assets/072ef07f-c14f-4c7e-95df-4c159d9da5ab)
 
 
 ## Installation
