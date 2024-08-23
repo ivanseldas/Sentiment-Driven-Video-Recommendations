@@ -24,6 +24,35 @@ Decided to do a research through the API with 5 queries about 'Artificial Intell
 - "Top AI tools for data science",
 - "Artificial intelligence in robotics",
 
+```
+url = 'https://www.googleapis.com/youtube/v3/search'
+    params['q'] = query
+    params['maxResults'] = min(max_results, 50)  # Limitar a 50 por solicitud, que es el máximo permitido por la API
+    params['key'] = api_key
+
+    response = requests.get(url, params=params)
+    all_results = response.json()['items']
+    page_info = response.json()['pageInfo']['totalResults']
+    print(f'total video results: {page_info}')
+
+    next_page_token = response.json().get('nextPageToken')
+    
+    # Continuar obteniendo resultados hasta alcanzar el límite deseado
+    while next_page_token and len(all_results) < max_results:
+        params['pageToken'] = next_page_token
+        response = requests.get(url, params=params)
+        
+        if response.status_code == 200:
+            results = response.json()
+            all_results.extend(results['items'])
+            next_page_token = results.get('nextPageToken')
+        else:
+            print(f"Error: {response.status_code}")
+            break
+
+    return all_results[:max_results]
+```
+
 - **`df_videos`**: Video data including view count, like count, comment count, and more.
   
 - **`df_comments`**: Comment data with sentiment analysis and engagement metrics.
