@@ -8,12 +8,13 @@ Personalized video recommendation system based on video content, user interactio
 
 -----------------------------------------------------------------------------------------------------------------
 
-## Objectives
+## Recommendation based on:
 
-- **Develop a Recommendation System**: Create a system that recommends videos based on content similarity, sentiment analysis, and video statistics.
-- **Incorporate Sentiment Analysis**: Adjust recommendations using sentiment data extracted from user comments.
-- **Utilize Clustering**: Enhance recommendations by clustering similar videos and applying these clusters in the recommendation process.
+- **Video Content**: creating a similarity cousine matrix from the video transcripts.
+- **Comments Sentiment Analysis**: extracting the sentiments of each video for more personalized recommendations.
+- **Clustering**: clustering similar videos based on their figures  and applying these clusters in the recommendation process.
 
+### Data
 ## Datasets from Youtube API
 Decided to do a research through the API with 5 queries about 'Artificial Intelligence':
 
