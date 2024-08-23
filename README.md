@@ -14,31 +14,6 @@ Personalized video recommendation system based on video content, user interactio
 - **Comments Sentiment Analysis**: extracting the sentiments of each video for more personalized recommendations.
 - **Clustering**: clustering similar videos based on their figures  and applying these clusters in the recommendation process.
 
-### Data
-## Datasets from Youtube API
-Decided to do a research through the API with 5 queries about 'Artificial Intelligence':
-
-- "What is artificial intelligence?"
-- "Artificial intelligence applications in healthcare"
-- "AI in autonomous vehicles"
-- "Machine learning vs deep learning"
-- "Artificial intelligence in finance"
-- "How does AI work?"
-- "Top AI tools for data science"
-- "Artificial intelligence in robotics"
-
-The following datasets were gathered:
-
-- **`df_videos`**: Video data including view count, like count, comment count, and more.
-  
-- **`df_comments`**: Comment data with sentiment analysis and engagement metrics.
-
-- **`df_channels`**: Channel-level data including subscriber count and total video views.
-  
-- **`df_categories`**: Categorical data related to video genres and types.
-
-![EDR](https://github.com/user-attachments/assets/8922dff4-4cbe-4d00-90a0-e9037fc39fc7)
-
 ## Key Features
 
 ### 1. Content-Based Filtering:
@@ -84,6 +59,33 @@ $$
 ### 3. Evaluation:
 - Used Precision@K, Recall@K, and F1-Score to evaluate recommendation quality.
 - Applied the Silhouette Score for cluster validation.
+
+### Data
+## Datasets from Youtube API
+Decided to do a research through the API with 5 queries about 'Artificial Intelligence':
+
+- "What is artificial intelligence?"
+- "Artificial intelligence applications in healthcare"
+- "AI in autonomous vehicles"
+- "Machine learning vs deep learning"
+- "Artificial intelligence in finance"
+- "How does AI work?"
+- "Top AI tools for data science"
+- "Artificial intelligence in robotics"
+
+The following datasets were gathered:
+
+- **`df_videos`**: Video data including view count, like count, comment count, and more.
+  
+- **`df_comments`**: Comment data with sentiment analysis and engagement metrics.
+
+- **`df_channels`**: Channel-level data including subscriber count and total video views.
+  
+- **`df_categories`**: Categorical data related to video genres and types.
+
+![EDR](https://github.com/user-attachments/assets/8922dff4-4cbe-4d00-90a0-e9037fc39fc7)
+
+
 
 ## Installation
 
