@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/442458ea-56a7-4924-81d9-7a44922056de)
 # Sentiment-Driven Video Recommendations
 
 ## Project Overview
@@ -52,7 +51,8 @@ $$
 
 - Applied cosine similarity to identify similar videos.
 
-![https://github.com/ivanseldas/Sentiment-Driven-Video-Recommendations/blob/main/assets/similarity_cousine_heatmap.jpg]
+![image](https://github.com/user-attachments/assets/e3e29e7b-5629-454a-831a-19cd82bb12c4)
+
 
 ### 2. Sentiment-Weighted Recommendations:
 - Incorporated sentiment analysis to refine similarity scores.
