@@ -68,26 +68,9 @@ $$
 
 ![image](https://github.com/user-attachments/assets/b202fc96-22af-4fdf-a2da-cbaecbd0be52)
 
-
-## How It Works
-
-### 1. Data Preparation:
-- Cleaned and standardized video and comment data.
-- Applied sentiment analysis.
-- Engineered relevant features.
-
-### 2. Recommendation Generation:
-- Generated recommendations using TF-IDF and cosine similarity.
-- Adjusted recommendations based on sentiment and video statistics.
-- Boosted recommendations from the same cluster and ensured language consistency.
-
-### 3. Evaluation:
-- Used Precision@K, Recall@K, and F1-Score to evaluate recommendation quality.
-- Applied the Silhouette Score for cluster validation.
-
 ### Data
-## Datasets from Youtube API
-Decided to do a research through the API with 5 queries about 'Artificial Intelligence':
+## Datasets from YouTube API
+Decided to do research through the API with 5 queries about 'Artificial Intelligence':
 
 - "What is artificial intelligence?"
 - "Artificial intelligence applications in healthcare"
@@ -128,19 +111,6 @@ cd Sentiment-Driven-Video-Recommendations
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### 1. Data Preparation:
-- Load and clean the datasets.
-- Run the feature engineering scripts to generate additional features.
-
-### 2. Generate Recommendations:
-- Use the provided functions to recommend videos based on a given video ID.
-- Adjust parameters such as `boost_factor` to refine recommendations.
-
-### 3. Evaluate Model:
-- Run evaluation scripts to assess model performance using various metrics.
-
 ## Results
 
 - **Precision@K, Recall@K, F1-Score**: The recommendation system achieves high relevance in its top-K recommendations, indicating a well-tuned model.
@@ -150,7 +120,7 @@ pip install -r requirements.txt
 
 - **Explore Supervised Learning**: Implement supervised models for further improving recommendation accuracy.
 - **A/B Testing**: Deploy the system in a real-world setting for user feedback and further refinement.
-- **Scalability**: Optimize the system for larger datasets and real-time recommendation.
+- **Scalability**: Optimize the system for larger datasets and real-time recommendations.
 
 ## Contributors
 
