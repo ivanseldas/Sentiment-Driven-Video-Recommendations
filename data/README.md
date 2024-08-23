@@ -40,6 +40,6 @@ This dataset contains detailed information about various YouTube videos, specifi
 |  1 | QaoDXYYtgK0 | Facebook A.I. Robots shut down after creating their own language |Artificial Intelligence |#facebook | 2017-07-31T23:32:53Z |     3369370 |       35258 |           5948 |        159 |
 |  2 | PqDwddEHswU | Why Choose Deep Learning? | Deep Learning for Engineers, Part 1                                      | 2021-04-13T13:15:02Z |      143984 |        2575 |             36 |        883 |
 |  3 | B-Y7rnOa43w | Earn thousands of dollars per day with A.I passively! #artificialintelligence #passiveincome         | 2023-04-07T13:39:48Z |        2430 |         270 |              3 |         44 |
-|  4 | vyit-1zKsZ4 | Doctors, apps and artificial intelligence - The future of medicine | DW Documentary                  | 2022-12-13T17:00:35Z |      113233 |        2030 |             84 |       1706 |)
+|  4 | vyit-1zKsZ4 | Doctors, apps and artificial intelligence - The future of medicine | DW Documentary                  | 2022-12-13T17:00:35Z |      113233 |        2030 |             84 |       1706 |
 
 This dataset is useful for analyzing trends in content related to artificial intelligence on YouTube, including popularity, user engagement (likes, comments), and how these videos are distributed across different categories.
