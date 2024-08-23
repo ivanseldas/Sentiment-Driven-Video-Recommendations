@@ -82,5 +82,3 @@ This DataFrame is useful for analyzing the performance and characteristics of Yo
 | UCmFOjlpYEhxf_wJUDuz6xxQ         | John Snow Labs         | Helping healthcare and life science organizations...                        | 2015-12-22 10:11:49+00:00           | 4110             | 452         | 278345     | US     |
 | UC8kFF39hsRrFfHM6-7A6APQ         | AI Sciences            | AI Sciences is an e-learning company; the company offers...                 | 2018-10-07 12:08:56+00:00           | 31100            | 371         | 1480785    | US     |
 | UCXhQNRQ-eQALFv5Q0ltpOiw         | Knowledge GPT          | Welcome to Knowledge GPT! Our channel is your...                            | 2024-06-07 08:17:39.751713+00:00    | 9                | 45          | 5040       | CA     |
-
-
