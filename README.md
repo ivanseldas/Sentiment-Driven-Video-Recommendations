@@ -65,7 +65,7 @@ $$
 ---
 
 ## 3️⃣ **Clustering**:
-- 🔍 **DBSCAN** and **K-means** for clustering videos based on their features.
+- 🔍 **DBSCAN** and **K-MEANS** for clustering videos based on their features.
 - 🎯 Prioritized videos from the same cluster in the recommendation process.
 
 ![Clustering Visualization](https://github.com/user-attachments/assets/b202fc96-22af-4fdf-a2da-cbaecbd0be52)
