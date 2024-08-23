@@ -2,10 +2,21 @@
 Personalized video recommendation system based on video content, user interactions, and sentiment analysis from comments to recommend relevant videos to users.
 
 -----------------------------------------------------------------------------------------------------------------
-
                             
-![waiting_temp](https://github.com/user-attachments/assets/509d4d0f-eb6f-4b8a-a4fb-81f0d2eddef4)
+**Input:**
+- `video_id`: The unique identifier of the video for which recommendations are being generated.
+- `title`: The title of the video for which recommendations are being generated.
 
+**Output:**
+- A DataFrame (`df`) containing the top 10 recommended videos with the following columns:
+  - `video_id`: The unique identifier of the recommended video.
+  - `title`: The title of the recommended video.
+  - `final_score`: The score indicating the relevance of the recommendation.
+
+**Workflow:**
+1. **Input:** The system takes a `video_id` and its corresponding `title` as input.
+2. **Processing:** Based on the input video, the system processes the data to identify the most relevant videos.
+3. **Output:** The system outputs a DataFrame (`df`) with the top 10 recommended videos, sorted by their `final_score`.
 
 -----------------------------------------------------------------------------------------------------------------
 
