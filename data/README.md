@@ -32,17 +32,15 @@ This dataset contains detailed information about various YouTube videos, specifi
 - **duration:** 1499 seconds (approximately 25 minutes)
 - **language:** "en" (English)
 
-### Data columns (total 15 columns):
+### Code:
 
-| columns     | description                                           | sample                                                     | dtype   |
-|-------------|-------------------------------------------------------|-------------------------------------------------------------|---------|
-| videoId     | Unique identifier for the video on YouTube            | qtlUwwtvuEg                                                 | object  |
-| title       | Title of the video                                    | 2024 Twelve Best free AI tools for Academic Research        | object  |
-| channelId   | Unique identifier for the channel that uploaded the video | UC4ay94l73_FLJ_WJkIqLnSw                                     | object  |
-| description | Description of the video provided by the author       | #aitools #researchpaper #academicwriting #...               | object  |
-| viewCount   | Number of views the video has received                | 268029                                                      | int64   |
-| likeCount   | Number of likes the video has received                | 8091                                                        | int64   |
-| commentCount| Number of comments made on the video                  | 381                                                         | int64   |
-
-
-This dataset is useful for analyzing trends in content related to artificial intelligence on YouTube, including popularity, user engagement (likes, comments), and how these videos are distributed across different categories.
+```
+# Function to fetch video metadata
+def fetch_video_metadata(video_id, api_key):
+    url = f"https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics,contentDetails&id={video_id}&key={api_key}"
+    response = requests.get(url).json()
+    if 'items' in response and len(response['items']) > 0:
+        return(response['items'])
+    else:
+        return None
+```
