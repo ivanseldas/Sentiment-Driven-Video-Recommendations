@@ -34,7 +34,6 @@ The following datasets were gathered:
 
 ![image](https://github.com/user-attachments/assets/758a916a-fc28-4e51-9cee-0a6fdb4e28f9)
 
-
 ## Key Features
 
 ### 1. Content-Based Filtering:
