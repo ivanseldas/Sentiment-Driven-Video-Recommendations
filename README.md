@@ -40,9 +40,15 @@ $$
 - Incorporated sentiment analysis to refine similarity scores.
 - Integrated video statistics (view count, like count, comment count) into the final recommendation score.
 
+![image](https://github.com/user-attachments/assets/eb5ca8a8-dc43-4d39-9340-dfd4f85da648)
+
+
 ### 3. Clustering:
 - Applied DBSCAN for clustering videos based on their features.
 - Prioritized videos from the same cluster in the recommendation process.
+
+![image](https://github.com/user-attachments/assets/941fa365-6579-475f-bd39-f4ac02f65b79)
+
 
 ## How It Works
 
