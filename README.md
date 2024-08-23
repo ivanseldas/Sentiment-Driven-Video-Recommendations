@@ -5,19 +5,19 @@ Personalized video recommendation system based on video content, user interactio
                             
 **Input:**
 
-| video_id    | title                                                 |
-|:------------|:------------------------------------------------------|
-| psKfEBBG8fQ | How Artificial Intelligence can help you build wealth |
+| video_id    | title                                 |
+|:------------|:--------------------------------------|
+| Z5s4cWbZX6E | The Ethics of Artificial Intelligence |
 
 **Top 5 Recommendations**
 
-|    | video_id    | title                                                                                               |   final_score |
-|---:|:------------|:----------------------------------------------------------------------------------------------------|--------------:|
-|  0 | -bu9x-UT0yk | Jasmy Technologies is Shaping Japan’s Future with AI, Robotics, and IoT                             |      0.501651 |
-|  2 | FKN5DSKzCPc | KoiBot 2nd Gen AI Commercial Robot:  Introducing remote healthcare applications with JAG Technology |      0.42254  |
-|  5 | 9LFbMz7DrDA | Artificial Intelligence -powered Phone Banking Solution for Financial Institutions                  |      0.408975 |
-|  7 | YT-lPqYbv9k | Case Studies of Artificial Intelligence, Ethics, Social Equity and Bias                             |      0.400314 |
-|  9 | eDbaDbvCsg8 | Medical AI: Exploring  the Realm  Prof   John Doyle                                                 |      0.390431 |
+| video_id    | title                                                                          |   final_score |
+|:------------|:-------------------------------------------------------------------------------|--------------:|
+| Aof4BxK0UlY | Artificial Intelligence Advances, and the Ethical Choices Ahead                |       1.36436 |
+| kX4oTF-2_kM | #12np:  Artificial Intelligence is Hard to See: Social & ethical impacts of AI |       1.30757 |
+| 7Azhgh0nhBY | Artificial Intelligence: How It Will Impact the Financial Industry             |       1.2211  |
+| AT8JCkJH9pY | The Future of Artificial Intelligence - Shaping our AI Futures                 |       1.1094  |
+| yIRL4xtmXE4 | How Will Artificial Intelligence Change Ethics? - Pedro Domingos               |       1.10072 |
 
 ## Recommendations based on:
 
