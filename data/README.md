@@ -3,7 +3,7 @@
 ## `df_videos`:
 This dataset contains detailed information about various YouTube videos, specifically those related to artificial intelligence and similar technologies. Each row in the dataset represents a unique video and provides a variety of associated metadata.
 
-### Main Columns:
+### Main Columns
 
 - **videoId:** Unique identifier for the video on YouTube.
 - **title:** Title of the video.
@@ -21,7 +21,7 @@ This dataset contains detailed information about various YouTube videos, specifi
 - **caption:** Indicates if the video has captions available (True/False).
 - **language:** Primary language of the video.
 
-### Data Examples:
+### Data Examples
 
 - **videoId:** `qtlUwwtvuEg`
 - **title:** "2024 Twelve Best free AI tools for Academic Research"
@@ -32,20 +32,9 @@ This dataset contains detailed information about various YouTube videos, specifi
 - **duration:** 1499 seconds (approximately 25 minutes)
 - **language:** "en" (English)
 
-### Code:
 
-```
-# Function to fetch video metadata
-def fetch_video_metadata(video_id, api_key):
-    url = f"https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics,contentDetails&id={video_id}&key={api_key}"
-    response = requests.get(url).json()
-    if 'items' in response and len(response['items']) > 0:
-        return(response['items'])
-    else:
-        return None
-```
-
-## `df_transcript`:
+## `df_transcript`: 
+Contains the video transcriptions, as well as their languages and translations if not in English:
 
 ## Main Columns
 
@@ -54,26 +43,7 @@ def fetch_video_metadata(video_id, api_key):
 - **language:** The language in which the transcription is written.
 - **translation:** The translated version of the transcription, if available.
 
-## Data Examples
-
-- **video_id:** `3qGbPDRzYRI`
-
-  - **transcription:** "hi i'm nick romano ceo of deeplight thanks for..."
-  - **language:** `english`
-  - **translation:** `NaN` (No translation available)
-
-- **video_id:** `K2tXKfKhryo`
-
-  - **transcription:** "यह बिल्कुल वाकई बीटेक कंप्यूटर साइंस फिक्शन क..."
-  - **language:** `hindi`
-  - **translation:** "This is absolutely really B.Tech computer science fiction..."
-
-- **video_id:** `3Rb2hRf5YCQ`
-
-  - **transcription:** "[Música] y sí a ella [Aplausos] aquí no el lib..."
-  - **language:** `spanish`
-  - **translation:** "[Music] and yes to her [Applause] here not the..."
-
+## Data Samples
 
 | video_id   | transcription                                                           | language | translation                                                    |
 |------------|-------------------------------------------------------------------------|----------|----------------------------------------------------------------|
