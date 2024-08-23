@@ -44,6 +44,14 @@ $$
 \text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in document } d}{\text{Total number of terms in document } d}
 $$
 
+$$
+\text{IDF}(t) = \log\left(\frac{N}{|\{d \in D : t \in d\}|}\right)
+$$
+
+$$
+\text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t)
+$$
+
 - Applied cosine similarity to identify similar videos.
 
 ### 2. Sentiment-Weighted Recommendations:
