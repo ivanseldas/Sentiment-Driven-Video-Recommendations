@@ -35,6 +35,9 @@ Personalized video recommendation system based on video content, user interactio
 
 ### 1. Content-Based Filtering:
 - Built a TF-IDF matrix from video transcriptions.
+
+\text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in document } d}{\text{Total number of terms in document } d}
+  
 - Applied cosine similarity to identify similar videos.
 
 ### 2. Sentiment-Weighted Recommendations:
