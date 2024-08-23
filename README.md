@@ -8,7 +8,7 @@ Personalized video recommendation system based on video content, user interactio
 
 -----------------------------------------------------------------------------------------------------------------
 
-## Recommendation based on:
+## Recommendations based on:
 
 - **Video Content**: creating a similarity cousine matrix from the video transcripts.
 - **Comments Sentiment Analysis**: extracting the sentiments of each video for more personalized recommendations.
