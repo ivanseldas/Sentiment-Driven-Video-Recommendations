@@ -34,12 +34,12 @@ This dataset contains detailed information about various YouTube videos, specifi
 
 ### Data columns (total 15 columns):
 
-|    | videoId     | publishedAt          |   viewCount |   categoryId |   likeCount |   commentCount |   duration | licensed   |
-|---:|:------------|:---------------------|------------:|-------------:|------------:|---------------:|-----------:|:-----------|
-|  0 | qtlUwwtvuEg | 2023-05-01T13:00:18Z |      268029 |           27 |        8091 |            381 |       1499 | True       |
-|  1 | QaoDXYYtgK0 | 2017-07-31T23:32:53Z |     3369370 |           24 |       35258 |           5948 |        159 | False      |
-|  2 | PqDwddEHswU | 2021-04-13T13:15:02Z |      143984 |           28 |        2575 |             36 |        883 | False      |
-|  3 | B-Y7rnOa43w | 2023-04-07T13:39:48Z |        2430 |           28 |         270 |              3 |         44 | True       |
-|  4 | vyit-1zKsZ4 | 2022-12-13T17:00:35Z |      113233 |           27 |        2030 |             84 |       1706 | True       |    
+|    | videoId     | title                                                                                                | publishedAt          |   categoryId |   viewCount |   likeCount |   commentCount |   duration |
+|---:|:------------|:-----------------------------------------------------------------------------------------------------|:---------------------|-------------:|------------:|------------:|---------------:|-----------:|
+|  0 | qtlUwwtvuEg | 2024 Twelve Best free AI tools for Academic Research || Latest AI tools || AI for researchers        | 2023-05-01T13:00:18Z |           27 |      268029 |        8091 |            381 |       1499 |
+|  1 | QaoDXYYtgK0 | Facebook A.I. Robots shut down after creating their own language |Artificial Intelligence |#facebook | 2017-07-31T23:32:53Z |           24 |     3369370 |       35258 |           5948 |        159 |
+|  2 | PqDwddEHswU | Why Choose Deep Learning? | Deep Learning for Engineers, Part 1                                      | 2021-04-13T13:15:02Z |           28 |      143984 |        2575 |             36 |        883 |
+|  3 | B-Y7rnOa43w | Earn thousands of dollars per day with A.I passively! #artificialintelligence #passiveincome         | 2023-04-07T13:39:48Z |           28 |        2430 |         270 |              3 |         44 |
+|  4 | vyit-1zKsZ4 | Doctors, apps and artificial intelligence - The future of medicine | DW Documentary                  | 2022-12-13T17:00:35Z |           27 |      113233 |        2030 |             84 |       1706 |   
 
 This dataset is useful for analyzing trends in content related to artificial intelligence on YouTube, including popularity, user engagement (likes, comments), and how these videos are distributed across different categories.
