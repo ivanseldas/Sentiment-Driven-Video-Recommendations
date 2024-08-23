@@ -4,7 +4,8 @@ Personalized video recommendation system based on video content, user interactio
 -----------------------------------------------------------------------------------------------------------------
 
                             
-                                          RECOMMENDATIONS
+![waiting_temp](https://github.com/user-attachments/assets/509d4d0f-eb6f-4b8a-a4fb-81f0d2eddef4)
+
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -47,7 +48,7 @@ $$
 - Applied DBSCAN for clustering videos based on their features.
 - Prioritized videos from the same cluster in the recommendation process.
 
-![image](https://github.com/user-attachments/assets/941fa365-6579-475f-bd39-f4ac02f65b79)
+![image](https://github.com/user-attachments/assets/b202fc96-22af-4fdf-a2da-cbaecbd0be52)
 
 
 ## How It Works
