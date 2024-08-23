@@ -4,8 +4,10 @@ Personalized video recommendation system based on video content, user interactio
 -----------------------------------------------------------------------------------------------------------------
                             
 **Input:**
-- `video_id`: The unique identifier of the video for which recommendations are being generated.
-- `title`: The title of the video for which recommendations are being generated.
+
+| video_id    | title                                                 |
+|:------------|:------------------------------------------------------|
+| psKfEBBG8fQ | How Artificial Intelligence can help you build wealth |
 
 **Output: Top 5 Recommendations**
 
