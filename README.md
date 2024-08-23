@@ -9,7 +9,7 @@ Personalized video recommendation system based on video content, user interactio
 |:------------|:------------------------------------------------------|
 | psKfEBBG8fQ | How Artificial Intelligence can help you build wealth |
 
-**Output: Top 5 Recommendations**
+**Top 5 Recommendations**
 
 |    | video_id    | title                                                                                               |   final_score |
 |---:|:------------|:----------------------------------------------------------------------------------------------------|--------------:|
@@ -19,18 +19,13 @@ Personalized video recommendation system based on video content, user interactio
 |  7 | YT-lPqYbv9k | Case Studies of Artificial Intelligence, Ethics, Social Equity and Bias                             |      0.400314 |
 |  9 | eDbaDbvCsg8 | Medical AI: Exploring  the Realm  Prof   John Doyle                                                 |      0.390431 |
 
-**Workflow:**
-1. **Input:** The system takes a `video_id` and its corresponding `title` as input.
-2. **Processing:** Based on the input video, the system processes the data to identify the most relevant videos.
-3. **Output:** The system outputs a DataFrame (`df`) with the top 10 recommended videos, sorted by their `final_score`.
-
------------------------------------------------------------------------------------------------------------------
-
 ## Recommendations based on:
 
 - **Video Content**: creating a similarity cousine matrix from the video transcripts.
 - **Comments Sentiment Analysis**: extracting the sentiments of each video for more personalized recommendations.
 - **Clustering**: clustering similar videos based on their figures  and applying these clusters in the recommendation process.
+
+-----------------------------------------------------------------------------------------------------------------
 
 ## Key Features
 
