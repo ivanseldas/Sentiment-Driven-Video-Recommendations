@@ -34,6 +34,41 @@ This dataset contains detailed information about various YouTube videos, specifi
 
 
 
+## `df_comments`:
+
+### Description of the `df_comments` DataFrame
+
+The `df_comments` DataFrame contains detailed information about user comments on YouTube videos. Each row represents a unique comment and includes various attributes related to the comment's content, author, and metadata.
+
+#### Main Columns
+
+- **comment_id:** Unique identifier for the comment on YouTube.
+- **author:** The name or username of the comment's author.
+- **author_channel_id:** Unique identifier for the YouTube channel of the comment's author.
+- **text:** The full text of the comment.
+- **like_count:** The number of likes the comment has received.
+- **published_at:** The date and time when the comment was originally posted, provided in ISO 8601 format.
+- **updated_at:** The date and time when the comment was last updated, if applicable, in ISO 8601 format.
+- **totalReplyCount:** The total number of replies to the comment.
+- **video_id:** The unique identifier of the YouTube video to which the comment was posted.
+- **translation:** The translated version of the comment text, if available.
+- **clean_text:** A cleaned version of the comment text, typically used for analysis (e.g., removing special characters or stopwords).
+- **sentiment:** A numerical score representing the sentiment of the comment, where higher values indicate more positive sentiment.
+
+This DataFrame is useful for analyzing user engagement and sentiment on YouTube videos, tracking comment activity, and understanding the audience's response to content.
+
+### Data Examples
+
+| comment_id                     | author                  | author_channel_id                    | text                                                         | like_count | published_at                     | updated_at                       | totalReplyCount | video_id     | translation                                                | clean_text                              | sentiment |
+|--------------------------------|-------------------------|--------------------------------------|--------------------------------------------------------------|------------|----------------------------------|----------------------------------|----------------|--------------|-------------------------------------------------------------|------------------------------------------|-----------|
+| UgxqJ2eO2p7w2NEvB2p4AaABAg     | @emmanuelamama1991      | UCdUooL3DTt3Wj0M3xRnAC3Q             | great video,helpful.                                          | 1.0        | 2024-08-17 13:07:48+00:00        | 2024-08-17 13:07:48+00:00        | 1.0            | qtlUwwtvuEg  | great video,helpful.                                        | great videohelpful                       | 0.6249    |
+| UgzmXwaNzivNHqjfR5l4AaABAg     | @dr.alexshayo6972       | UCN56M0YoTn18rd_KBFL0QGg             | Thank you for such well explained video tutorial              | 4.0        | 2023-05-01 14:48:21+00:00        | 2023-05-01 14:48:21+00:00        | 1.0            | qtlUwwtvuEg  | Thank you for such well explained video tutorial            | thank well explained video tutorial      | 0.5574    |
+| UgyySzt4xOZ1hKdS97x4AaABAg     | @mohdkashif4596         | UCr5Ua5AsmM6phaRu3dBU1qg             | very useful tools , thanks for sharing this in...             | 2.0        | 2023-07-20 11:33:23+00:00        | 2023-07-20 11:33:23+00:00        | 1.0            | qtlUwwtvuEg  | very useful tools , thanks for sharing this in...           | useful tool thanks sharing info u        | 0.8225    |
+| UgyHVo-IOZw_-uLb-wh4AaABAg     | @pipedrmmr              | UC5KmDvJCDtoM31gjpGcdYLQ             | This is great information and a terrific use o...             | 13.0       | 2023-06-25 00:36:50+00:00        | 2023-06-25 00:36:50+00:00        | 1.0            | qtlUwwtvuEg  | This is great information and a terrific use o...           | great information terrific use ai thanks creating | 0.9062    |
+| UgyIT65ucXCc-4loBEx4AaABAg     | @anamnaz2527            | UCriCWejgmnsDkaX77-Ay8Hw             | first two are not goof but all other AI id the...             | 1.0        | 2023-05-31 16:41:21+00:00        | 2023-05-31 16:41:21+00:00        | 1.0            | qtlUwwtvuEg  | first two are not goof but all other AI id the...           | first two goof ai id best thanks sharing video | 0.8720    |
+
+
+
 ## `df_transcript`: 
 Contains the video transcriptions, as well as their languages and translations if not in English:
 
