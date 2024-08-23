@@ -4,7 +4,7 @@ Personalized video recommendation system based on video content, user interactio
 -----------------------------------------------------------------------------------------------------------------
 
                             
-![waiting_temp](https://github.com/user-attachments/assets/509d4d0f-eb6f-4b8a-a4fb-81f0d2eddef4)
+                                              ![waiting_temp](https://github.com/user-attachments/assets/509d4d0f-eb6f-4b8a-a4fb-81f0d2eddef4)
 
 
 -----------------------------------------------------------------------------------------------------------------
