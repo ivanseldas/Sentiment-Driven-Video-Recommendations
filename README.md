@@ -111,18 +111,10 @@ git clone https://github.com/ivanseldas/Sentiment-Driven-Video-Recommendations.g
 cd Sentiment-Driven-Video-Recommendations
 ```
 
-### 3. Install required dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Results
+## Future Work
 
 - **Precision@K, Recall@K, F1-Score**: The recommendation system achieves high relevance in its top-K recommendations, indicating a well-tuned model.
 - **Clustering Insights**: The DBSCAN clustering effectively groups similar videos, enhancing the recommendation diversity.
-
-## Future Work
-
 - **Explore Supervised Learning**: Implement supervised models for further improving recommendation accuracy.
 - **A/B Testing**: Deploy the system in a real-world setting for user feedback and further refinement.
 - **Scalability**: Optimize the system for larger datasets and real-time recommendations.
