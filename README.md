@@ -2,9 +2,6 @@
 
 YoutubeAPI | Google Cloud | PySpark | NLP | Huggingface | DBScan | K-Means
 
-![Python](https://img.shields.io/badge/python-v3.9-blue)
-![GitHub](https://img.shields.io/badge/GitHub-markdown-lightgrey)
-
 Personalized video recommendation system based on **video content**, **user interactions**, and **sentiment analysis** from comments to recommend relevant videos to users.
 
 ---
