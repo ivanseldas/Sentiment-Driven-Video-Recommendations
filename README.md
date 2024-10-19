@@ -125,6 +125,29 @@ cd Sentiment-Driven-Video-Recommendations
 
 - **Ivan Seldas Perulero**
 
+## Project structure
+
+video_recommender_project/
+│
+├── app/
+│   ├── __init__.py
+│   ├── api.py                 # FastAPI app para servir las recomendaciones
+│   ├── recommender.py          # Lógica para cargar y consultar la matriz precomputada
+│   ├── preprocessing.py        # Preprocesamiento para TF-IDF, análisis de sentimientos, clustering y generación de la matriz final
+│   ├── data_loader.py          # Cargar y almacenar los DataFrames (df_videos y df_comments)
+│   └── utils.py                # Funciones auxiliares
+│
+├── data/                       # Datos precalculados o usados
+│   ├── df_videos.csv           # DataFrame con la información de los videos
+│   ├── df_comments.csv         # DataFrame con los comentarios de los videos
+│   ├── final_score_matrix.npy  # Matriz precomputada de puntajes finales
+│
+├── Dockerfile                  # Definición del contenedor Docker
+├── requirements.txt            # Dependencias del proyecto (FastAPI, NumPy, scikit-learn, etc.)
+├── preprocess_final_matrix.py  # Script para precomputar la matriz final
+└── README.md                   # Documentación del proyecto
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
