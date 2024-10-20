@@ -1,1 +1,3 @@
-keys/api_key_youtube.txt
+/keys/
+/keys/*
+/keys/api_key_youtube.txt
