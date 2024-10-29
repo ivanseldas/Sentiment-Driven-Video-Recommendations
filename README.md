@@ -4,7 +4,7 @@ YoutubeAPI | Google Cloud | PySpark | NLP | Huggingface | DBScan | K-Means
 
 Personalized video recommendation system based on **video content**, **user interactions**, and **sentiment analysis** from comments to recommend relevant videos to users.
 
-![flowchart_diagram drawio (1)](https://github.com/user-attachments/assets/5d72b2f3-de9e-4d88-9430-93209342e5f3)
+![flowchart_diagram drawio (2)](https://github.com/user-attachments/assets/ede2571f-a1b0-461e-be63-a9e4693a8f2b)
 
 ---
 
