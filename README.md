@@ -73,7 +73,7 @@ $$
 - **DBSCAN** and **K-MEANS** for clustering videos based on their features.
 - Prioritized videos from the same cluster in the recommendation process.
 
-![Clustering Visualization](https://github.com/user-attachments/assets/b202fc96-22af-4fdf-a2da-cbaecbd0be52)
+![video_clustering_kmeans](https://github.com/user-attachments/assets/fc4c6798-96c8-43d6-a216-313b148df6b6)
 
 ---
 
