@@ -57,7 +57,7 @@ $$
 
 - Applied **Cosine Similarity** to identify similar videos.
 
-![final_matrix_triangular](https://github.com/user-attachments/assets/2eafb8d2-6833-4936-b49b-c17303c0cb19)
+![final_matrix_triangular](https://github.com/user-attachments/assets/4ee7631b-35e5-418f-a0c0-457ec3967f53)
 
 ---
 
