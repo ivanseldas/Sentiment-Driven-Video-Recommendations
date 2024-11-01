@@ -34,7 +34,7 @@ Personalized video recommendation system based on **video content**, **user inte
 ### Final Score Calculation
 
 $$
-\text{Final Score} = \text{Similarity Matrix Score}   \times   \text{Sentiment Score}   \times   \text{Cluster Boost}
+\text{Final Score} = \text{Similarity Matrix Score} \times \text{Sentiment Score} \times \text{Cluster Boost}
 $$
 
 where:
@@ -43,15 +43,15 @@ where:
 
 - **Sentiment Score** from comments is defined as:
   
-  $$
-  \text{Sentiment Score} = 1 + \text{Weighted Sentiment}
-  $$
+$$
+\text{Sentiment Score} = 1 + \text{Weighted Sentiment}
+$$
 
 - **Cluster Boost** from videos with similar stats is a constant:
 
-  $$
-  \text{Cluster Boost} = 1.2
-  $$
+$$
+\text{Cluster Boost} = 1.2
+$$
 
 -----------------------------------------------------------------------------------------------------------------
 
