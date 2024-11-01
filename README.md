@@ -39,16 +39,13 @@ $$
 
 where:
 
-- **Video Content**: creating a similarity matrix from the video transcripts.
+- **Cosine Similarity Matrix** from the video transcripts.
 
-- **Sentiment Score** from comments is defined as:
-  
+- **Sentiment Score** from the video comments is defined as: 
 $$
 \text{Sentiment Score} = 1 + \text{Weighted Sentiment}
 $$
-
-- **Cluster Boost** from videos with similar stats is a constant:
-
+- **Cluster Boost** from the videos with similar stats is a constant:
 $$
 \text{Cluster Boost} = 1.2
 $$
