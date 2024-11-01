@@ -5,6 +5,8 @@ YoutubeAPI | Google Cloud | PySpark | NLP | Huggingface | DBScan | K-Means
 
 Personalized video recommendation system based on **video content**, **user interactions**, and **sentiment analysis** from comments to recommend relevant videos to users.
 
+![flowchart_diagram_dark](https://github.com/user-attachments/assets/547f55b6-96f5-4e37-8ca7-794ba83e1192)
+
 ---
 
 ## **Input:**
@@ -48,13 +50,6 @@ $$
 $$
 \text{Cluster Boost} = 1.2
 $$
-
----
-
-## **Flowchart**
-
-![flowchart_diagram_dark](https://github.com/user-attachments/assets/547f55b6-96f5-4e37-8ca7-794ba83e1192)
-
 
 -----------------------------------------------------------------------------------------------------------------
 
