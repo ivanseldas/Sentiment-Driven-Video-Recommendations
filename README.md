@@ -125,7 +125,7 @@ Conducted research through the **YouTube API** with 5 queries about 'Artificial 
 
 ![Entity-Relationship Diagram](https://github.com/user-attachments/assets/072ef07f-c14f-4c7e-95df-4c159d9da5ab)
 
-## Folders structure
+## Folder structure
 
 ```
 video_recommender_project/
