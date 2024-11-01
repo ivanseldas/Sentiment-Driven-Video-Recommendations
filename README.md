@@ -29,7 +29,7 @@ YoutubeAPI | Google Cloud | PySpark | NLP | Huggingface | DBScan | K-Means
 
 ---
 
-## **Final Score Calculation:**
+### **Final Score Calculation:**
 
 $$
 \text{Final Score} = \text{Cosine Similarity Matrix} \times \text{Sentiment Score} \times \text{Cluster Boost}
