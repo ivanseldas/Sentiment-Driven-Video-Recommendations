@@ -31,6 +31,28 @@ Personalized video recommendation system based on **video content**, **user inte
 
 ## **Recommendations based on:**
 
+### Final Score Calculation
+
+The **Final Score** is calculated as:
+
+$$
+\text{Final Score} = \text{Similarity Matrix Score} \times \text{Sentiment Score} \times \text{Cluster Boost}
+$$
+
+where:
+
+- **Video Content**: Creating a similarity matrix from the video transcripts.
+
+- **Sentiment Score** from comments is defined as:
+  $$
+  \text{Sentiment Score} = 1 + \text{Weighted Sentiment}
+  $$
+- **Cluster Boost** is a constant:
+  $$
+  \text{Cluster Boost} = 1.2
+  $$
+
+
 - **Video Content**: Creating a similarity matrix from the video transcripts.
 - **Comments Sentiment Analysis**: Extracting the sentiments of each video for more personalized recommendations.
 - **Clustering**: Clustering similar videos based on their figures and applying these clusters in the recommendation process.
