@@ -51,7 +51,9 @@ $$
 \text{Cluster Boost} = 1.2
 $$
 
-## **Project Schema**:
+---
+
+## **Project Schema:
 
 ![flowchart_diagram_dark](https://github.com/user-attachments/assets/547f55b6-96f5-4e37-8ca7-794ba83e1192)
 
