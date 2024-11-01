@@ -1,4 +1,4 @@
-# 🎯 **Sentiment-Driven Video Recommendations** 🎯
+# **Sentiment-Driven Video Recommendations**
 [Link to project](https://video-recommendation-project-321465604500.us-central1.run.app/)
 
 YoutubeAPI | Google Cloud | PySpark | NLP | Huggingface | DBScan | K-Means
@@ -9,7 +9,7 @@ Personalized video recommendation system based on **video content**, **user inte
 
 ---
 
-## **🎥 Input:**
+## **Input:**
 
 | <span style="color:#ff6347">**video_id**</span> | <span style="color:#ff6347">**title**</span> |
 |:------------|:--------------------------------------|
@@ -17,7 +17,7 @@ Personalized video recommendation system based on **video content**, **user inte
 
 ---
 
-## **🔝 Top 5 Recommendations**
+## **Top 5 Recommendations**
 
 | <span style="color:#4682b4">**video_id**</span> | <span style="color:#4682b4">**title**</span> | <span style="color:#4682b4">**final_score**</span> |
 |:------------|:-------------------------------------------------------------------------------|--------------:|
@@ -29,19 +29,19 @@ Personalized video recommendation system based on **video content**, **user inte
 
 ---
 
-## **🔍 Recommendations based on:**
+## **Recommendations based on:**
 
-- **📹 Video Content**: Creating a similarity matrix from the video transcripts.
-- **💬 Comments Sentiment Analysis**: Extracting the sentiments of each video for more personalized recommendations.
-- **🔗 Clustering**: Clustering similar videos based on their figures and applying these clusters in the recommendation process.
+- **Video Content**: Creating a similarity matrix from the video transcripts.
+- **Comments Sentiment Analysis**: Extracting the sentiments of each video for more personalized recommendations.
+- **Clustering**: Clustering similar videos based on their figures and applying these clusters in the recommendation process.
 
 
 -----------------------------------------------------------------------------------------------------------------
 
-# 🌟 **Key Features** 🌟
+# **Key Features**
 
 ## 1️⃣ **Content-Based Filtering**:
-- 📚 Built a **TF-IDF matrix** from video transcriptions.
+- Built a **TF-IDF matrix** from video transcriptions.
 
 $$
 \text{TF}(t, d) = \frac{\text{Number of times term } t \text{ appears in document } d}{\text{Total number of terms in document } d}
@@ -55,7 +55,7 @@ $$
 \text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t)
 $$
 
-- 🧠 Applied **Cosine Similarity** to identify similar videos.
+- Applied **Cosine Similarity** to identify similar videos.
 
 ![Cosine Similarity Visualization](https://github.com/user-attachments/assets/e3e29e7b-5629-454a-831a-19cd82bb12c4)
 
@@ -70,36 +70,36 @@ $$
 ---
 
 ## 3️⃣ **Clustering**:
-- 🔍 **DBSCAN** and **K-MEANS** for clustering videos based on their features.
-- 🎯 Prioritized videos from the same cluster in the recommendation process.
+- **DBSCAN** and **K-MEANS** for clustering videos based on their features.
+- Prioritized videos from the same cluster in the recommendation process.
 
 ![Clustering Visualization](https://github.com/user-attachments/assets/b202fc96-22af-4fdf-a2da-cbaecbd0be52)
 
 ---
 
-# 📊 **Data**
+# **Data**
 
 ## **Datasets from YouTube API**
 Conducted research through the **YouTube API** with 5 queries about 'Artificial Intelligence':
 
-- 🤖 "What is artificial intelligence?"
-- 🏥 "Artificial intelligence applications in healthcare"
-- 🚗 "AI in autonomous vehicles"
-- 🧠 "Machine learning vs deep learning"
-- 💰 "Artificial intelligence in finance"
-- ⚙️ "How does AI work?"
-- 🛠️ "Top AI tools for data science"
-- 🤖 "Artificial intelligence in robotics"
+- "What is artificial intelligence?"
+- "Artificial intelligence applications in healthcare"
+- "AI in autonomous vehicles"
+- "Machine learning vs deep learning"
+- "Artificial intelligence in finance"
+- "How does AI work?"
+- "Top AI tools for data science"
+- "Artificial intelligence in robotics"
 
 ### **Gathered Datasets:**
 
-- **`df_videos`**: 🎥 Video data including **view count**, **like count**, **comment count**, and more.
+- **`df_videos`**: Video data including **view count**, **like count**, **comment count**, and more.
   
-- **`df_comments`**: 💬 Comment data with **sentiment analysis** and engagement metrics.
+- **`df_comments`**: Comment data with **sentiment analysis** and engagement metrics.
 
-- **`df_channels`**: 📺 Channel-level data including **subscriber count** and total video views.
+- **`df_channels`**: Channel-level data including **subscriber count** and total video views.
   
-- **`df_categories`**: 📂 Categorical data related to video genres and types.
+- **`df_categories`**: Categorical data related to video genres and types.
 
 ![Entity-Relationship Diagram](https://github.com/user-attachments/assets/072ef07f-c14f-4c7e-95df-4c159d9da5ab)
 
@@ -130,6 +130,7 @@ cd Sentiment-Driven-Video-Recommendations
 
 ## Project structure
 
+```
 video_recommender_project/
 │
 ├── app/
@@ -149,7 +150,7 @@ video_recommender_project/
 ├── requirements.txt            # Dependencias del proyecto (FastAPI, NumPy, scikit-learn, etc.)
 ├── preprocess_final_matrix.py  # Script para precomputar la matriz final
 └── README.md                   # Documentación del proyecto
-
+```
 
 ## License
 
