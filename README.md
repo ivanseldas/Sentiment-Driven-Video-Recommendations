@@ -45,7 +45,7 @@ $$
 \text{Sentiment Score} = 1 + \text{Weighted Sentiment}
 $$
 
-- **Cluster Boost** from the videos with similar stats, defined as constant when belogning to same cluster:
+- **Cluster Boost** from the videos with similar stats:
 
 $$
 \text{Cluster Boost} = 1.2
