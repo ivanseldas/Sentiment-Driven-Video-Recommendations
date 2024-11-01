@@ -27,12 +27,10 @@ Personalized video recommendation system based on **video content**, **user inte
 
 ---
 
-## **Recommendations based on:**
-
-### Final Score Calculation
+## **Final Score Calculation:**
 
 $$
-\text{Final Score} = \text{Similarity Matrix Score} \times \text{Sentiment Score} \times \text{Cluster Boost}
+\text{Final Score} = \text{Cosine Similarity Matrix} \times \text{Sentiment Score} \times \text{Cluster Boost}
 $$
 
 where:
@@ -50,6 +48,10 @@ $$
 $$
 \text{Cluster Boost} = 1.2
 $$
+
+---
+
+## **Flowchart**
 
 ![flowchart_diagram_dark](https://github.com/user-attachments/assets/547f55b6-96f5-4e37-8ca7-794ba83e1192)
 
