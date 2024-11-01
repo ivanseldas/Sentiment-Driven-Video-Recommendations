@@ -41,13 +41,13 @@ where:
 
 - **Cosine Similarity Matrix** from the video transcripts.
 
-- **Sentiment Score** from the video comments is defined as:
+- **Sentiment Score** from the video comments, defined as:
 
 $$
 \text{Sentiment Score} = 1 + \text{Weighted Sentiment}
 $$
 
-- **Cluster Boost** from the videos with similar stats is a constant:
+- **Cluster Boost** from the videos with similar stats, defined as constant when belogning to same cluster:
 
 $$
 \text{Cluster Boost} = 1.2
