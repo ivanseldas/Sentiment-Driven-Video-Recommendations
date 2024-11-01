@@ -1,31 +1,9 @@
 # **Sentiment-Driven Video Recommendations**
-[Link to project](https://video-recommendation-project-321465604500.us-central1.run.app/)
-
-YoutubeAPI | Google Cloud | PySpark | NLP | Huggingface | DBScan | K-Means
 
 [End-to-end] Personalized video recommendation system based on **video content**, **user interactions**, and **sentiment analysis** from comments to recommend relevant videos to users.
 
 ![image](https://github.com/user-attachments/assets/1a014ed6-2396-4f2a-85db-02a4e69ae9a2)
-
----
-
-## **Input:**
-
-| <span style="color:#ff6347">**video_id**</span> | <span style="color:#ff6347">**title**</span> |
-|:------------|:--------------------------------------|
-| **Z5s4cWbZX6E** | **The Ethics of Artificial Intelligence** |
-
----
-
-## **Top 5 Recommendations**
-
-| <span style="color:#4682b4">**video_id**</span> | <span style="color:#4682b4">**title**</span> | <span style="color:#4682b4">**final_score**</span> |
-|:------------|:-------------------------------------------------------------------------------|--------------:|
-| **Aof4BxK0UlY** | Artificial Intelligence Advances, and the Ethical Choices Ahead                |       **1.36436** |
-| **kX4oTF-2_kM** | #12np:  Artificial Intelligence is Hard to See: Social & ethical impacts of AI |       **1.30757** |
-| **7Azhgh0nhBY** | Artificial Intelligence: How It Will Impact the Financial Industry             |       **1.2211**  |
-| **AT8JCkJH9pY** | The Future of Artificial Intelligence - Shaping our AI Futures                 |       **1.1094**  |
-| **yIRL4xtmXE4** | How Will Artificial Intelligence Change Ethics? - Pedro Domingos               |       **1.10072** |
+[Link to website](https://video-recommendation-project-321465604500.us-central1.run.app/)
 
 ---
 
