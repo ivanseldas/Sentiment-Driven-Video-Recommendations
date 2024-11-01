@@ -135,21 +135,21 @@ video_recommender_project/
 │
 ├── app/
 │   ├── __init__.py
-│   ├── api.py                 # FastAPI app para servir las recomendaciones
-│   ├── recommender.py          # Lógica para cargar y consultar la matriz precomputada
-│   ├── preprocessing.py        # Preprocesamiento para TF-IDF, análisis de sentimientos, clustering y generación de la matriz final
-│   ├── data_loader.py          # Cargar y almacenar los DataFrames (df_videos y df_comments)
-│   └── utils.py                # Funciones auxiliares
+│   ├── api.py               # FastAPI app to serve recommendations
+│   ├── recommender.py       # Logic to load and query the precomputed matrix
+│   ├── preprocessing.py     # Preprocessing for TF-IDF, sentiment analysis, clustering, and generating the final matrix
+│   ├── data_loader.py       # Load and store DataFrames (df_videos and df_comments)
+│   └── utils.py             # Auxiliary functions
 │
-├── data/                       # Datos precalculados o usados
-│   ├── df_videos.csv           # DataFrame con la información de los videos
-│   ├── df_comments.csv         # DataFrame con los comentarios de los videos
-│   ├── final_score_matrix.npy  # Matriz precomputada de puntajes finales
+├── data/
+│   ├── df_videos.csv        # DataFrame with video information
+│   ├── df_comments.csv      # DataFrame with video comments
+│   └── final_score_matrix   # Precomputed final score matrix
 │
-├── Dockerfile                  # Definición del contenedor Docker
-├── requirements.txt            # Dependencias del proyecto (FastAPI, NumPy, scikit-learn, etc.)
-├── preprocess_final_matrix.py  # Script para precomputar la matriz final
-└── README.md                   # Documentación del proyecto
+├── Dockerfile               # Docker container definition
+├── requirements.txt         # Project dependencies (FastAPI, NumPy, scikit-learn, etc.)
+├── preprocess_final_matrix.py # Script to precompute the final matrix
+└── README.md                # Project documentation
 ```
 
 ## License
