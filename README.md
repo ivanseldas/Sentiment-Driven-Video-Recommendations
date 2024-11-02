@@ -38,6 +38,31 @@ $$
 
 ![flowchart_diagram_dark](https://github.com/user-attachments/assets/547f55b6-96f5-4e37-8ca7-794ba83e1192)
 
+---
+
+## Folder structure
+
+```
+video_recommender_project/
+│
+├── app/
+│   ├── __init__.py
+│   ├── api.py               # FastAPI app to serve recommendations
+│   ├── recommender.py       # Logic to load and query the precomputed matrix
+│   ├── preprocessing.py     # Preprocessing for TF-IDF, sentiment analysis, clustering, and generating the final matrix
+│   ├── data_loader.py       # Load and store DataFrames (df_videos and df_comments)
+│   └── utils.py             # Auxiliary functions
+│
+├── data/
+│   ├── df_videos.csv        # DataFrame with video information
+│   ├── df_comments.csv      # DataFrame with video comments
+│   └── final_score_matrix   # Precomputed final score matrix
+│
+├── Dockerfile               # Docker container definition
+├── requirements.txt         # Project dependencies (FastAPI, NumPy, scikit-learn, etc.)
+├── preprocess_final_matrix.py # Script to precompute the final matrix
+└── README.md                # Project documentation
+```
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -105,30 +130,6 @@ Conducted research through the **YouTube API** with 5 queries about 'Artificial 
 - **`df_categories`**: Categorical data related to video genres and types.
 
 ![Entity-Relationship Diagram](https://github.com/user-attachments/assets/072ef07f-c14f-4c7e-95df-4c159d9da5ab)
-
-## Folder structure
-
-```
-video_recommender_project/
-│
-├── app/
-│   ├── __init__.py
-│   ├── api.py               # FastAPI app to serve recommendations
-│   ├── recommender.py       # Logic to load and query the precomputed matrix
-│   ├── preprocessing.py     # Preprocessing for TF-IDF, sentiment analysis, clustering, and generating the final matrix
-│   ├── data_loader.py       # Load and store DataFrames (df_videos and df_comments)
-│   └── utils.py             # Auxiliary functions
-│
-├── data/
-│   ├── df_videos.csv        # DataFrame with video information
-│   ├── df_comments.csv      # DataFrame with video comments
-│   └── final_score_matrix   # Precomputed final score matrix
-│
-├── Dockerfile               # Docker container definition
-├── requirements.txt         # Project dependencies (FastAPI, NumPy, scikit-learn, etc.)
-├── preprocess_final_matrix.py # Script to precompute the final matrix
-└── README.md                # Project documentation
-```
 
 ## Installation
 
