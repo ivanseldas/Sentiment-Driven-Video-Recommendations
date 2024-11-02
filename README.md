@@ -13,27 +13,26 @@
 
 ---
 
-## **Final Score Calculation:**
+## Final Score Calculation
 
-$$
+The final score is calculated as follows:
+
+\[
 \text{Final Score} = \text{Cosine Similarity Matrix} \times \text{Sentiment Score} \times \text{Cluster Boost}
-$$
+\]
 
 where:
 
-- **Cosine Similarity Matrix** from the video transcripts.
+\[
+\text{Sentiment Score} = 1 + \text{Weighted Sentiment Score per Video}
+\]
 
-- **Sentiment Score** from the video comments, defined as:
+and
 
-$$
-\text{Sentiment Score} = 1 + \text{Weighted Sentiment}
-$$
-
-- **Cluster Boost** from the videos with similar stats:
-
-$$
+\[
 \text{Cluster Boost} = 1.2
-$$
+\]
+
 
 ---
 
