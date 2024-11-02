@@ -1,12 +1,12 @@
 # **Sentiment-Driven Video Recommendations**
 
-- **End-to-end Personalized Video Recommendation System** driven by Natural Processing Language (NLP) and Machine Learning (ML) for recommendations based on:
-        - **Content**: TF-IDF analysis of video transcripts.
-        - **Sentiment**: Comment sentiment score from RoBERTa.
-        - **Clustering**: Unsupervised ML for grouping videos.
-    - **Methodology**:
-        - Constructs a **Cosine Similarity Matrix** (TF-IDF).
-        - Enhances with **Sentiment** and **Clustering Scores** for refined recommendations.
+- **End-to-end Personalized Video Recommendation System** driven by Natural Language Processing (NLP) and Machine Learning (ML), with recommendations based on:
+    - **Content**: TF-IDF analysis of video transcripts.
+    - **Sentiment**: Comment sentiment score from RoBERTa.
+    - **Clustering**: Unsupervised ML for grouping videos.
+- **Methodology**:
+    - Constructs a **Cosine Similarity Matrix** (TF-IDF).
+    - Enhances with **Sentiment** and **Clustering Scores** for refined recommendations.
 
 ![image](https://github.com/user-attachments/assets/0748f0fc-5b27-4dce-8abf-ca0e094932be)
 [Link to website](https://video-recommendation-project-321465604500.us-central1.run.app/)
