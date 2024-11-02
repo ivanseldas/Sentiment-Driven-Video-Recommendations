@@ -1,4 +1,4 @@
-# **Emotion-Powered Video Recommendations**
+# **Sentiment-Driven Video Recommendations**
 
 - **End-to-end Personalized Video Recommendation System** driven by Natural Language Processing (NLP) and Machine Learning (ML), with recommendations based on:
     - **Video Content**: TF-IDF analysis of video transcripts.
