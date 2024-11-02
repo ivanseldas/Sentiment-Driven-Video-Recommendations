@@ -8,6 +8,7 @@
     - Constructs a **Cosine Similarity Matrix** (TF-IDF).
     - Enhances with **Sentiment** and **Clustering Scores** for refined recommendations.
 - **Final Score**:
+
 $$
 \text{Final Score} = \text{Cosine Similarity Matrix} \times \text{Sentiment Score} \times \text{Cluster Boost}
 $$
