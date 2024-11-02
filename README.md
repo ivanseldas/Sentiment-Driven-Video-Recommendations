@@ -17,21 +17,19 @@
 
 The final score is calculated as follows:
 
-\[
+$$
 \text{Final Score} = \text{Cosine Similarity Matrix} \times \text{Sentiment Score} \times \text{Cluster Boost}
-\]
+$$
 
 where:
 
-\[
+$$
 \text{Sentiment Score} = 1 + \text{Weighted Sentiment Score per Video}
-\]
+$$
 
-and
-
-\[
+$$
 \text{Cluster Boost} = 1.2
-\]
+$$
 
 
 ---
