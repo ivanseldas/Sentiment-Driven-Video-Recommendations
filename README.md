@@ -43,25 +43,26 @@ $$
 ## Folder structure
 
 ```
-video_recommender_project/
-│
-├── app/
-│   ├── __init__.py
-│   ├── api.py               # FastAPI app to serve recommendations
-│   ├── recommender.py       # Logic to load and query the precomputed matrix
-│   ├── preprocessing.py     # Preprocessing for TF-IDF, sentiment analysis, clustering, and generating the final matrix
-│   ├── data_loader.py       # Load and store DataFrames (df_videos and df_comments)
-│   └── utils.py             # Auxiliary functions
-│
-├── data/
-│   ├── df_videos.csv        # DataFrame with video information
-│   ├── df_comments.csv      # DataFrame with video comments
-│   └── final_score_matrix   # Precomputed final score matrix
-│
-├── Dockerfile               # Docker container definition
-├── requirements.txt         # Project dependencies (FastAPI, NumPy, scikit-learn, etc.)
-├── preprocess_final_matrix.py # Script to precompute the final matrix
-└── README.md                # Project documentation
+Sentiment-Driven-Video-Recommendations/
+├── assets/                       # Auxiliary files and resources (e.g., images for documentation)
+├── data/                         # Data folder
+│   ├── clean/                    # Processed data ready for analysis or modeling
+│   ├── clean_data/               # Additional cleaned data, possibly for specific use cases
+│   ├── raw_data/                 # Unprocessed, original data from sources
+│   └── README.md                 # Explanation of the data folder contents
+├── docker_app/                   # Docker-related files and application code
+│   ├── __pycache__/              # Python cache for compiled files
+│   ├── Dockerfile                # Instructions for building the Docker image
+│   ├── final_score_matrix.joblib # Precomputed final score matrix for recommendations
+│   ├── main_app.py               # Main application script
+│   ├── readme.rst                # Documentation for Docker app setup
+│   └── requirements.txt                               # Python dependencies for the project
+└── notebooks/                                         # Jupyter notebooks for analysis and modeling
+    ├── 0_fetch_and_clean_data_youtube_api.ipynb       # Fetch and clean data from YouTube API
+    ├── 2_emotion_analysis_pyspark.ipynb               # Perform sentiment analysis using PySpark
+    ├── 3_clustering.ipynb                             # Clustering analysis for video grouping
+    └── 4_tfidf_matrix_and_model_pipeline.ipynb        # Build TF-IDF matrix and model pipeline
+
 ```
 
 -----------------------------------------------------------------------------------------------------------------
