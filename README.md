@@ -108,7 +108,7 @@ $$
 # **Data**
 
 ## **Datasets from YouTube API**
-Conducted research through the **YouTube API** with 5 queries about 'Artificial Intelligence':
+Conducted research through the **YouTube API** with queries about 'Artificial Intelligence':
 
 - "What is artificial intelligence?"
 - "Artificial intelligence applications in healthcare"
