@@ -138,7 +138,7 @@ Conducted research through the **YouTube API** with queries about 'Artificial In
  - Machine Learning (RoBERTa LLM, TF-IDF, K-Means, DBScan, PCA)
  - Docker
  - FastAPI
- - Google Cloud -> Google Run
+ - Google Cloud (Cloud Storage, Cloud Run)
 
 ## Installation
 
