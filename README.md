@@ -132,6 +132,14 @@ Conducted research through the **YouTube API** with queries about 'Artificial In
 
 ![Entity-Relationship Diagram](https://github.com/user-attachments/assets/072ef07f-c14f-4c7e-95df-4c159d9da5ab)
 
+## Technologies Used
+ - Python, PySpark
+ - Natural Language Processing (NLTK, Google Translate)
+ - Machine Learning (RoBERTa LLM, TF-IDF, K-Means, DBScan, PCA)
+ - Docker
+ - FastAPI
+ - Google Cloud -> Google Run
+
 ## Installation
 
 ### 1. Clone the repository:
