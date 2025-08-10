@@ -9,7 +9,7 @@
     - Enhances with **Sentiment** and **Clustering Scores** for refined recommendations.
 
 [Link to website](https://video-recommendation-project-321465604500.us-central1.run.app/)
-![image](https://github.com/user-attachments/assets/0748f0fc-5b27-4dce-8abf-ca0e094932be)
+![image](https://github.com/user-attachments/assets/6fae5a36-08af-4396-8d7a-2ae44f8c64b5)
 
 ---
 
