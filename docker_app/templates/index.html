@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sentiment-Driven Video Recommendations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Epilogue:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0c0c0c; --fg:#fff; --muted:#888; --accent:#7dd3fc; --card:#1a1a1a; --border:#2c2c2c; --error:#ff6f61; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Epilogue',sans-serif; background:var(--bg); color:var(--fg); min-height:100vh; -webkit-font-smoothing:antialiased; padding:0 0 40px; }
+    main { max-width:1120px; margin:32px auto 0; padding:0 20px; display:grid; grid-template-columns:1fr 340px; gap:32px; }
+    @media (max-width:980px){ main { grid-template-columns:1fr; } }
+    h1.page-title { font-family:'Playfair Display',serif; font-size:clamp(1.9rem,3.2vw,2.4rem); font-weight:700; letter-spacing:.4px; margin:0 0 18px; }
+    .subtitle { font-size:.85rem; color:var(--muted); margin:-4px 0 24px; letter-spacing:.5px; text-transform:uppercase; }
+    .panel { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:18px 20px 22px; position:relative; }
+    .video-container { margin:0 0 26px; }
+    .video-wrapper { position:relative; aspect-ratio:16/9; width:100%; border:1px solid var(--border); border-radius:12px; overflow:hidden; background:#000; }
+    .video-wrapper iframe { width:100%; height:100%; border:0; }
+    .section-heading { font-size:.75rem; text-transform:uppercase; letter-spacing:1px; color:var(--muted); margin:0 0 14px; }
+    .emotion-list { display:flex; flex-direction:column; gap:8px; max-height:400px; overflow-y:auto; padding-right:4px; }
+    .emotion-row { display:flex; align-items:center; gap:14px; }
+    .emotion-label { width:110px; font-size:.72rem; letter-spacing:.6px; text-transform:capitalize; color:#cfd0d0; flex-shrink:0; }
+    .bar-outer { flex:1; height:22px; background:#111; border:1px solid var(--border); border-radius:8px; position:relative; overflow:hidden; }
+    .bar-inner { position:absolute; inset:0; width:0; background:linear-gradient(90deg,var(--accent),#52b9e6); display:flex; align-items:center; justify-content:flex-end; padding:0 6px; font-size:.65rem; font-weight:600; color:#001016; letter-spacing:.5px; transition:width .6s cubic-bezier(.4,0,.2,1); }
+    .emotion-row:hover .bar-inner { filter:brightness(1.08); }
+    .no-comments { text-align:center; color:var(--error); font-size:.8rem; letter-spacing:.6px; padding:12px 0; }
+    .recs-panel { display:flex; flex-direction:column; gap:10px; }
+    .rec-list { display:flex; flex-direction:column; gap:6px; max-height:640px; overflow-y:auto; padding-right:4px; }
+    .rec-item { display:flex; gap:12px; padding:4px 2px; cursor:pointer; align-items:center; transition:.25s; position:relative; border-radius:8px; }
+    .rec-item:hover { transform:translateX(4px); }
+    .rec-thumb { width:88px; aspect-ratio:16/9; object-fit:cover; border:1px solid #222; border-radius:8px; background:#000; }
+    .rec-meta { display:flex; flex-direction:column; gap:4px; min-width:0; }
+    .rec-id { font-size:.72rem; color:#d0d0d0; font-weight:500; letter-spacing:.4px; word-break:break-all; }
+    .rec-score { font-size:.6rem; letter-spacing:1px; text-transform:uppercase; color:var(--accent); font-weight:600; }
+    .emotion-list::-webkit-scrollbar, .rec-list::-webkit-scrollbar { width:8px; }
+    .emotion-list::-webkit-scrollbar-track, .rec-list::-webkit-scrollbar-track { background:#101010; }
+    .emotion-list::-webkit-scrollbar-thumb, .rec-list::-webkit-scrollbar-thumb { background:#272727; border-radius:4px; }
+    .emotion-list::-webkit-scrollbar-thumb:hover, .rec-list::-webkit-scrollbar-thumb:hover { background:#333; }
+    .flex-col { display:flex; flex-direction:column; }
+    .fade-in { animation:fadeIn .6s ease; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(4px);} to { opacity:1; transform:translateY(0);} }
+    footer { margin-top:48px; font-size:.65rem; text-align:center; color:var(--muted); letter-spacing:.5px; }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="flex-col">
+      <h1 class="page-title">Video Recommendation Explorer</h1>
+      <p class="subtitle">Similarity × Sentiment × Clustering</p>
+      <div class="video-container fade-in">
+        <div class="video-wrapper">
+          <iframe id="video-frame" src="" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="panel fade-in" style="margin-top:26px;">
+        <div class="section-heading">Top Emotions (Comments)</div>
+        <div id="emotion-scores" class="emotion-list"></div>
+      </div>
+    </section>
+    <aside class="recs-panel">
+      <div class="section-heading" style="margin-top:6px;">Recommended Videos</div>
+      <div id="video-list" class="rec-list"></div>
+    </aside>
+  </main>
+  <footer>&copy; <span id="year"></span> Sentiment Recommender</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const videoList = document.getElementById('video-list');
+    const videoFrame = document.getElementById('video-frame');
+    const emotionScoresDiv = document.getElementById('emotion-scores');
+
+    async function fetchRecommendations(videoId = null) {
+      const url = videoId ? `/api/recommendations/?video_id=${videoId}` : "/api/recommendations/";
+      const response = await fetch(url);
+      const data = await response.json();
+      videoFrame.src = `https://www.youtube.com/embed/${data.initial_video}`;
+      videoList.innerHTML = '';
+      data.top_10_videos.forEach(video => {
+        const item = document.createElement('div');
+        item.className = 'rec-item';
+        const img = document.createElement('img');
+        img.src = `https://i.ytimg.com/vi/${video.id}/mqdefault.jpg`;
+        img.alt = 'Thumbnail';
+        img.className = 'rec-thumb';
+        const meta = document.createElement('div');
+        meta.className = 'rec-meta';
+        const vid = document.createElement('div');
+        vid.className = 'rec-id';
+        vid.textContent = video.id;
+        const sc = document.createElement('div');
+        sc.className = 'rec-score';
+        sc.textContent = `Score ${video.score.toFixed(2)}`;
+        meta.appendChild(vid);
+        meta.appendChild(sc);
+        item.appendChild(img);
+        item.appendChild(meta);
+        item.onclick = () => loadVideo(video.id);
+        videoList.appendChild(item);
+      });
+      loadEmotionScores(data.initial_video);
+    }
+
+    function loadVideo(videoId) {
+      videoFrame.src = `https://www.youtube.com/embed/${videoId}`;
+      fetchRecommendations(videoId);
+      loadEmotionScores(videoId);
+    }
+
+    async function loadEmotionScores(videoId) {
+      const response = await fetch(`/api/emotion_scores/${videoId}`);
+      const emotionScores = await response.json();
+      emotionScoresDiv.innerHTML = '';
+      const top10Emotions = Object.entries(emotionScores)
+        // Filtramos valores nulos/NaN y aquellos menores al umbral 0.1
+        .filter(([e, s]) => s !== null && !isNaN(s) && s >= 0.1)
+        .sort((a,b)=> b[1]-a[1])
+        .slice(0,10);
+      if (!top10Emotions.length) {
+        const empty = document.createElement('div');
+        empty.className = 'no-comments';
+        empty.textContent = 'No Comments';
+        emotionScoresDiv.appendChild(empty);
+        return;
+      }
+      top10Emotions.forEach(([emotion, score]) => {
+        const row = document.createElement('div');
+        row.className = 'emotion-row';
+        const label = document.createElement('div');
+        label.className = 'emotion-label';
+        label.textContent = emotion;
+        const outer = document.createElement('div');
+        outer.className = 'bar-outer';
+        const inner = document.createElement('div');
+        inner.className = 'bar-inner';
+        inner.style.width = (score * 100).toFixed(1) + '%';
+        inner.textContent = score.toFixed(2);
+        outer.appendChild(inner);
+        row.appendChild(label);
+        row.appendChild(outer);
+        emotionScoresDiv.appendChild(row);
+        requestAnimationFrame(()=>{ inner.style.width = (score * 100).toFixed(1) + '%'; });
+      });
+    }
+
+    fetchRecommendations();
+  </script>
+</body>
+</html>
