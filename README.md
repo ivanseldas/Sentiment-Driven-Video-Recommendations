@@ -8,7 +8,7 @@
     - Constructs a **Cosine Similarity Matrix** (TF-IDF).
     - Enhances with **Sentiment** and **Clustering Scores** for refined recommendations.
 
-[Link to website](https://video-recommendation-project-321465604500.us-central1.run.app/)
+[Link to website](https://vidrec-321465604500.europe-west1.run.app/)
 ![image](https://github.com/user-attachments/assets/6fae5a36-08af-4396-8d7a-2ae44f8c64b5)
 
 ---

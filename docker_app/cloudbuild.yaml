@@ -1,0 +1,28 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Build
+    args: ['build', '-t', '$_AR_HOSTNAME/$PROJECT_ID/$_REPO/vidrec:$COMMIT_SHA', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    id: Push
+    args: ['push', '$_AR_HOSTNAME/$PROJECT_ID/$_REPO/vidrec:$COMMIT_SHA']
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    id: Deploy
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - vidrec-service
+      - --image=$_AR_HOSTNAME/$PROJECT_ID/$_REPO/vidrec:$COMMIT_SHA
+      - --region=$_REGION
+      - --platform=managed
+      - --allow-unauthenticated
+      - --memory=512Mi
+      - --port=8000
+substitutions:
+  _REGION: europe-west1
+  _AR_HOSTNAME: europe-west1-docker.pkg.dev
+  _REPO: vidrec
+images:
+  - '$_AR_HOSTNAME/$PROJECT_ID/$_REPO/vidrec:$COMMIT_SHA'
+options:
+  logging: CLOUD_LOGGING_ONLY
