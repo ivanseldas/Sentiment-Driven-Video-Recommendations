@@ -140,18 +140,6 @@ Conducted research through the **YouTube API** with queries about 'Artificial In
  - FastAPI
  - Google Cloud (Cloud Storage, Cloud Run)
 
-## Installation
-
-### 1. Clone the repository:
-```bash
-git clone https://github.com/ivanseldas/Sentiment-Driven-Video-Recommendations.git
-```
-
-### 2. Navigate to the project directory:
-```bash
-cd Sentiment-Driven-Video-Recommendations
-```
-
 ## Future Work
 
 - **Precision@K, Recall@K, F1-Score**: The recommendation system achieves high relevance in its top-K recommendations, indicating a well-tuned model.
